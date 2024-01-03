@@ -1,6 +1,6 @@
 package com.project.bingo;
 
-public enum BingoColumn {
+public enum BingoColumnName {
     B,
     I,
     N,

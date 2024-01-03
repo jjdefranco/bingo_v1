@@ -5,12 +5,12 @@ public class BingoSquare {
     public String number;
     private boolean marked = false;
 
-    public BingoSquare(final BingoColumn letter, final String number) {
+    public BingoSquare(final BingoColumnName letter, final String number) {
         this.letter = letter.toString();
         this.number = number;
     }
 
-    public BingoSquare(final BingoColumn letter, final int number) {
+    public BingoSquare(final BingoColumnName letter, final int number) {
         this.letter = letter.toString();
         this.number = String.format("%02d", number);
     }
@@ -19,8 +19,8 @@ public class BingoSquare {
         return this.marked;
     }
 
-    public void markSquare() {
-        this.marked = true;
+    public void setMarkStatus(boolean markStatus) {
+        this.marked = markStatus;
     }
 
     public String getSquareValue() {
